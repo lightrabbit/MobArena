@@ -576,6 +576,7 @@ public class ArenaImpl implements Arena
         setHealth(p, 20);
         p.setFoodLevel(20);
         p.setGameMode(GameMode.SURVIVAL);
+        p.setFlying(false);
         movePlayerToLobby(p);
         
         arenaPlayerMap.put(p, new ArenaPlayer(p, this, plugin));
